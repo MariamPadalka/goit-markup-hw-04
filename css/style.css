@@ -9,6 +9,8 @@
   /* Iris */
   --primary-brand-color: #4d5ae5;
   --white-txt-color: #ffffff;
+  /* Light Slate */
+  --main-icon-color: #8e8f99;
 
   /* =================BACKGROUND COLORS================= */
   /* navy-blue */
@@ -195,6 +197,14 @@ body {
 /* HERO */
 .hero {
   background-color: var(--main-bgc-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -235,6 +245,18 @@ body {
 }
 
 /* ADVANTAGES */
+.advantages-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+}
+
 .advantages-list-item {
   --items: 4;
 }
@@ -246,6 +268,31 @@ body {
 }
 
 /* TEAM */
+.socials {
+  display: flex;
+  gap: 24px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-brand-color);
+  color: var(--light-bgc-color);
+  border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-txt-color);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
 .team {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -260,6 +307,43 @@ body {
   background-color: var(--white-bgc-color);
 }
 
+.team-list-item .text {
+  margin-bottom: 8px;
+}
+
+/* CUSTOMERS */
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-list {
+  display: flex;
+  gap: var(--indent);
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  color: var(--main-icon-color);
+
+  border: 1px solid var(--main-icon-color);
+  border-radius: 4px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--accent-bgc-color);
+  border: 1px solid var(--accent-bgc-color);
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+
 /* FOOTER */
 .footer {
   background-color: var(--main-bgc-color);
@@ -271,6 +355,17 @@ body {
   color: var(--nav-bgc-color);
   width: 264px;
   margin-top: 16px;
+}
+
+.footer-socials-title {
+  color: var(--white-txt-color);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.footer-wrapper {
+  display: flex;
+  gap: 120px;
 }
 
 .logo-footer {
