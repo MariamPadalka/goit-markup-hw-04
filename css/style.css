@@ -23,6 +23,8 @@
   --light-bgc-color: #f4f4fd;
   /* white */
   --white-bgc-color: #ffffff;
+  /* green */
+  --icon-accent-color: #31d0aa;
 
   /* Others */
   --indent: 24px;
@@ -241,7 +243,7 @@ body {
 }
 
 .wrapper {
-  padding: 32px 0;
+  padding: 32px 16px;
   text-align: center;
   border: 1px solid var(--nav-bgc-color);
   border-top: none;
@@ -317,6 +319,13 @@ body {
   margin-bottom: 8px;
 }
 
+.team-wrapper {
+  padding: 32px 0;
+  text-align: center;
+  border: 1px solid var(--nav-bgc-color);
+  border-top: none;
+}
+
 /* CUSTOMERS */
 .customers {
   padding-top: 120px;
@@ -369,6 +378,16 @@ body {
   margin-bottom: 16px;
 }
 
+.footer .socials-link {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--light-bgc-color);
+}
+
+.footer .socials-link:hover,
+.footer .socials-link:focus {
+  background-color: var(--icon-accent-color);
+}
+
 .footer-wrapper {
   display: flex;
   gap: 120px;
@@ -402,7 +421,6 @@ body {
 
 .portfolio-link wrapper:hover,
 .portfolio-link wrapper:focus {
-  border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
